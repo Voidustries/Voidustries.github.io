@@ -1,5 +1,6 @@
 #particles-js{
     height: 100vh;
+    margin: 0px;
 }
 
 body{
@@ -10,4 +11,5 @@ body{
 
 html{
     height: 100%;
+    margin: 0px;
 }
