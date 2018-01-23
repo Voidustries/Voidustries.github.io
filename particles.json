@@ -87,17 +87,6 @@
           "opacity": 1
         }
       },
-      "bubble": {
-        "distance": 800,
-        "size": 80,
-        "duration": 2,
-        "opacity": 0.8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
       "push": {
         "particles_nb": 4
       },
