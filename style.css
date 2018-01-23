@@ -5,6 +5,7 @@
 
 body{
     background: url("assets/bg.jpg");
+    background-position: center;
     margin: 0vh;
     height: 100vh;
 }
