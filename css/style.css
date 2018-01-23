@@ -1,0 +1,17 @@
+body{
+    background: url('../assets/bg.jpg') no-repeat center;
+    background-size: cover;
+    margin: 5px;
+    height: 99vh;
+    overflow: hidden
+}
+
+#particles-js{
+    height: 100vh;
+}
+
+.hero-image-block {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+}
