@@ -9,12 +9,6 @@ body{
     height: 100vh;
 }
 
-.btext{
-    position: absolute;
-    text-align: center;
-    top: 30%;
-}
-
 html{
     height: 100vh;
     margin: 0vh;
