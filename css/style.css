@@ -1,11 +1,3 @@
-body{
-    background: url('../assets/bg.jpg') no-repeat center;
-    background-size: cover;
-    margin: 5px;
-    height: 99vh;
-    overflow: hidden
-}
-
 #particles-js{
     height: 100vh;
 }
@@ -14,4 +6,33 @@ body{
     position: absolute;
     text-align: center;
     top: 30%;
+}
+
+.content:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -10px;
+    z-index: -1;
+
+    display: block;
+    background-image: url('../assets/bg.jpg');
+    height: 200vh;
+    width: 200vh;
+
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin-left: 0px;
+    margin-right: 0px;
 }
