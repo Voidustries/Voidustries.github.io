@@ -1,0 +1,13 @@
+#particles-js{
+    height: fit-content;
+}
+
+body{
+    background: url("assets/bg.jpg");
+    margin: 0px;
+    height: 100vh;
+}
+
+html{
+    height: 100%;
+}
