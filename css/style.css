@@ -8,30 +8,8 @@
     top: 30%;
 }
 
-.content:before {
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 5px;
-    z-index: -1;
-
-    display: block;
-    background-image: url('../assets/bg.jpg');
-    height: 100vh;
-
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    filter: blur(4px);
-}
-
-.content {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    margin-left: 0;
-    margin-right: 0;
+body {
+    background-size: auto;
+    background: url("../assets/bg.jpg") no-repeat center;
+    overflow: hidden;
 }
