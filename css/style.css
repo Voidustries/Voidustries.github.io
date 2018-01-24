@@ -9,7 +9,7 @@
 }
 
 body {
-    background-size: 100vh;
+    background-size: 100%;
     background: url("../assets/bg.jpg") no-repeat center;
     overflow: hidden;
 }
