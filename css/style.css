@@ -13,12 +13,12 @@
     position: fixed;
     left: 0;
     right: 0;
-    top: -10px;
+    top: 5px;
     z-index: -1;
 
     display: block;
     background-image: url('../assets/bg.jpg');
-    height: 200vh;
+    height: 100vh;
 
     -webkit-filter: blur(4px);
     -moz-filter: blur(4px);
