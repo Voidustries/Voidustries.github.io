@@ -9,7 +9,8 @@
 }
 
 body {
-    background-size: 100%;
-    background: url("../assets/bg.jpg") no-repeat center;
+    background-size: cover;
+    background: url("../assets/bg.jpg") no-repeat fixed;
     overflow: hidden;
+    background-position: center;
 }
