@@ -8,21 +8,27 @@
         <link rel="icon" href="assets/Voidustries_Logo_V1.png">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/landing.css">
+
+        <script type="text/javascript">
+            var ver = navigator.userAgent;
+            if (ver.indexOf('Edge') !== -1) {
+                window.location = "https://www.afakewebsite.com/edgemessage.html";
+            } else {
+                // Not Edge, do nothing
+            }
+        </script>
     </head>
 
     <body>
         <!-- Particle Container -->
         <div id="particles-js">
 
-            <!-- Image Container -->
+        <!-- Image Container -->
             <div class="hero-image-block">
                 <img src="assets/Voidustries_Banner_V1.png" width=50%>
                 <br>
-                <img src="assets/Coming_Soon.png" width="20%">
-
-                <!-- TODO: Change 'CS' to 'Enter' -->
-
+                <a href="pages/index.html"><img src="assets/Enter.png" width="10%"></a>
             </div>
         </div>
 
