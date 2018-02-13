@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- Title -->
-    <title>Voidustries</title>
+    <title>Voidustries - Developers</title>
 
     <!-- Icon -->
     <link rel="icon" href="../assets/Voidustries_Logo_V1.png">
@@ -18,22 +18,34 @@
 <body>
 <nav role="navigation" style="background-color: #24292e">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo" style="color: rgba(255,255,255,0.75)">Voidustries</a>
+        <a id="logo-container" href="index.html" class="brand-logo"
+           style="color: rgba(255,255,255,0.75)">Voidustries</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#" style="color: rgba(255,255,255,0.75)">Projects</a></li>
-            <li><a href="#" style="color: rgba(255,255,255,0.75)">About Us</a></li>
-            <li><a href="devs.html" style="color: rgba(255,255,255,0.75)">Developers</a></li>
-            <li><a href="#" style="color: rgba(255,255,255,0.75)">Join Us</a></li>
+            <li><a href="projects.html" style="color: rgba(255,255,255,0.75)">Projects</a></li>
+            <li><a href="about.html" style="color: rgba(255,255,255,0.75)">About Us</a></li>
+            <li><a class="modal-trigger" href="#laugh" style="color: rgba(255,255,255,0.75)">Developers</a></li>
+            <li><a href="join.html" style="color: rgba(255,255,255,0.75)">Join Us</a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-            <li><a href="#"><i class="material-icons">code</i>Projects</a></li>
-            <li><a href="#"><i class="material-icons">info_outline</i>About Us</a></li>
-            <li><a href="#"><i class="material-icons">people_outline</i>Developers</a></li>
-            <li><a href="#"><i class="material-icons">add</i>Join Us</a></li>
+            <li><a href="projects.html"><i class="material-icons">code</i>Projects</a></li>
+            <li><a href="about.html"><i class="material-icons">info_outline</i>About Us</a></li>
+            <li><a class="modal-trigger" href="#laugh"><i class="material-icons">people_outline</i>Developers</a></li>
+            <li><a href="join.html"><i class="material-icons">add</i>Join Us</a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons"
                                                                         style="color: rgba(255,255,255,0.75)">menu</i></a>
+        <!-- Modal Structure -->
+        <div id="laugh" class="modal black-text"
+             style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(0.8) scaleY(0.8); overflow: hidden">
+            <div class="modal-content">
+                <h4>Voidustries</h4>
+                <p>You are already on the Developers page</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+            </div>
+        </div>
     </div>
 </nav>
 
@@ -41,26 +53,39 @@
     <div class="container">
         <div class="section">
             <div class="row">
-                <h5>Here you can find a list of all the current members of Voidustries along with their profiles and
-                    projects they have started and contributed to. If you would like to join, be sure to let us know on
-                    the join page.</h5>
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Developers</span>
+                        <p>Here you can find a list of all the current members of Voidustries along with their profiles
+                            and projects they have started and contributed to. Everyone at Voidustries has a role to
+                            play, even if you are just working on your own project, you are still contributing to the
+                            community. Open source brings like minded people together and with lots of people involved
+                            you can accomplish many things. Everything has to start somewhere, somewhere small, so if
+                            you would like to join, be sure to let us know on the join page.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Start of Developer Cards -->
+
     <div class="container">
         <div class="section">
             <div class="row">
-                <div class="col s12 m3">
-                    <div class="card sticky-action grey lighten-2" style="width: 250px">
+
+                <!-- Stone Monarch -->
+                <div class="col s12 m6 l4 lx3">
+                    <div class="card sticky-action grey lighten-2">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img src="https://avatars1.githubusercontent.com/u/35647358?s=460&v=4">
+                            <img src="assets/devs/StoneMonarch.png">
                             <span class="card-title"><i class="material-icons right yellow-text">star_border</i> </span>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Stone Monarch<i
-                                    class="material-icons right">more_vert</i></span>
+                        <div class="card-content" align="center">
+                            <span class="card-title activator grey-text text-darken-4">Stone Monarch<br><i
+                                    class="material-icons">drag_handle</i></span>
                         </div>
-                        <div class="card-reveal">
+                        <div class="card-reveal" align="center">
                             <span class="card-title grey-text text-darken-4">Stone Monarch<i
                                     class="material-icons right">close</i></span>
                             <table>
@@ -84,28 +109,101 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="card-action" align="center">
+                        <div class="card-action" align="center" style="max-height: 71px">
                             <script type='text/javascript'
-                                    src='https://ko-fi.com/widgets/widget_2.js'></script>
-                            <script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#24292e', 'C0C693A5');
-                            kofiwidget2.draw();</script>
-
+                                    src='https://ko-fi.com/widgets/widget_2.js'>
+                            </script>
+                            <script type='text/javascript'>
+                                kofiwidget2.init('Buy Me a Coffee', '#24292e', 'C0C693A5');
+                                kofiwidget2.draw();
+                            </script>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m3">
-                    <div class="card grey lighten-2">
-                        <div class="card-image">
-                            <img src="https://avatars3.githubusercontent.com/u/7742170?s=400&u=eabd60796efa9be8df9ac82b6ca8664db211cb5d&v=4">
+
+                <!-- Guy -->
+                <div class="col s12 m6 l4 lx3">
+                    <div class="card sticky-action grey lighten-2">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="assets/devs/Guy.png">
+                            <span class="card-title"><i class="material-icons right yellow-text">star_border</i> </span>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title">Guy Ponimansky</span>
+                        <div class="card-content" align="center">
+                            <span class="card-title activator grey-text text-darken-4">Guy Ponimansky<br><i
+                                    class="material-icons">drag_handle</i></span>
+                        </div>
+                        <div class="card-reveal" align="center">
+                            <span class="card-title grey-text text-darken-4">Guy Ponimansky<i
+                                    class="material-icons right">close</i></span>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><i class="material-icons orange-text">business</i></td>
+                                    <td>Co-Founder</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="material-icons">business_center</i></td>
+                                    <td>Developer</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="material-icons">code</i></td>
+                                    <td><a href="https://github.com/gponimansky">GitHub</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="material-icons">web</i></td>
+                                    <td><a href="http://guyponimansky.me">Website</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-action" align="center" style="max-height: 71px">
+                            <a href="https://paypal.me/GPonimansky"><img src="assets/Donate-Paypal.png"
+                                                                         style="max-width: 100%; max-height: 36px"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Philip -->
+                <div class="col s12 m6 l4 lx3">
+                    <div class="card sticky-action grey lighten-2">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="assets/devs/Philip.jpg">
+                        </div>
+                        <div class="card-content" align="center">
+                            <span class="card-title activator grey-text text-darken-4">Philip Edwards<br><i
+                                    class="material-icons">drag_handle</i></span>
+                        </div>
+                        <div class="card-reveal" align="center">
+                            <span class="card-title grey-text text-darken-4">Philip Edwards<i
+                                    class="material-icons right">close</i></span>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><i class="material-icons orange-text">photo_library</i></td>
+                                    <td>Art Designer</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="material-icons">person_outline</i></td>
+                                    <td>Member</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="material-icons">photo_camera</i></td>
+                                    <td><a href="https://www.instagram.com/philartworks">Instagram</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="material-icons">cloud_queue</i></td>
+                                    <td><a href="https://twitter.com/PhilArtworks">Twitter</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- / End of Developer Cards -->
 </main>
 
 <footer class="page-footer cyan darken-3">
@@ -123,8 +221,8 @@
                 <h5 class="white-text">Connect</h5>
                 <ul>
                     <li><a class="white-text" href="https://github.com/Voidustries">GitHub</a></li>
-                    <li><a class="white-text" href="#!">About</a></li>
-                    <li><a class="white-text" href="#!">Projects</a></li>
+                    <li><a class="white-text" href="about.html">About</a></li>
+                    <li><a class="white-text" href="projects.html">Projects</a></li>
                 </ul>
             </div>
         </div>
