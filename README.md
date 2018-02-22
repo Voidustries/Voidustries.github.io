@@ -1,0 +1,2 @@
+# Voidustries.github.io
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b5f30b93e6e14a1083f23c6aebf8a02f)](https://app.codacy.com/app/ponimansky.guy/Voidustries.github.io?utm_source=github.com&utm_medium=referral&utm_content=Voidustries/Voidustries.github.io&utm_campaign=badger)
