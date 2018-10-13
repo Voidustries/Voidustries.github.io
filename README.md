@@ -12,4 +12,4 @@
 
 ## Projects
 
-[*Poly*](https://github.com/Voidustries/Poly_Project)
+[*Poly*](https://github.com/Voidustries/Poly)
