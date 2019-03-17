@@ -8,8 +8,6 @@
 [![license](https://img.shields.io/github/license/voidustries/Voidustries.github.io.svg?style=flat-square)](https://github.com/Voidustries/Voidustries.github.io/blob/master/LICENSE)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/voidustries/Voidustries.github.io.svg?style=flat-square)](https://github.com/Voidustries/Voidustries.github.io)
 
-`IN PROGRESS`
-
 ## Projects
 
 [*Poly*](https://github.com/Voidustries/Poly)
