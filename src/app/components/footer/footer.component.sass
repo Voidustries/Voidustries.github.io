@@ -1,22 +1,12 @@
 .container
     display: flex
-    flex-flow: column wrap
+    flex-flow: column
     background-color: rgba(0, 0, 0, 0.16)
 
 .main-content
-    display: flex
-    flex-flow: row wrap
-    justify-content: space-between
-    padding-bottom: 30px
-    padding-left: calc( 100% / 4 )
-    padding-right: calc( 100% / 4 )
-    padding-top: 30px
+    padding: 30px calc( 100% / 4 ) 30px calc( 100% / 4 )
 
-.info
-    max-width: 50%
-    min-width: 239px
-
-.logo, .connect-header
+.logo
     font-size: 1.64rem
 
 .info-content
@@ -26,7 +16,9 @@
     background-color: rgba(0, 0, 0, 0.16)
 
 .sub-content
-    padding-left: calc( 100% / 4 )
+    padding: 15px calc( 100% / 4 ) 15px calc( 100% / 4 )
 
-.copyright
-    padding-top: 15px
+.sub-link
+    color: #fff
+    text-decoration: none
+    font-weight: 700
