@@ -6,10 +6,9 @@ assignees:
   - StoneMonarch
 
 body:
-  - type: markdown
+- type: markdown
     attributes:
-      values: |
-        Thanks for filling out a report.
+      value: Thanks for filling out a report.
   - type: textarea
     id: what-happened
     attributes:
