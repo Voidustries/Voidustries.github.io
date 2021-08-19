@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
+  styleUrls: ['./navbar.component.sass'],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.sass']
 })
 export class NavbarComponent implements OnInit {
 

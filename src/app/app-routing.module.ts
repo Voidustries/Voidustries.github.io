@@ -10,21 +10,21 @@ const routes: Routes = [
   //   component: component
   // },
   {
+    component: HomeComponent,
     path: '',
-    component: HomeComponent
   },
   {
+    component: ProjectsComponent,
     path: 'projects',
-    component: ProjectsComponent
   },
   {
+    component: DevelopersComponent,
     path: 'developers',
-    component: DevelopersComponent
   },
 ];
 
 @NgModule({
+  exports: [RouterModule],
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
 })
 export class AppRoutingModule { }

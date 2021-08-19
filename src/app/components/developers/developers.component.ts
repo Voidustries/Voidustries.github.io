@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-developers',
+  styleUrls: ['./developers.component.sass'],
   templateUrl: './developers.component.html',
-  styleUrls: ['./developers.component.sass']
 })
 export class DevelopersComponent implements OnInit {
 
