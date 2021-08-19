@@ -1,5 +1,5 @@
 # Voidustries (WIP)
-[![Codacy Badge](https://img.shields.io/codacy/grade/b5f30b93e6e14a1083f23c6aebf8a02f.svg?style=flat-square)](https://app.codacy.com/app/ponimansky.guy/Voidustries.github.io?utm_source=github.com&utm_medium=referral&utm_content=Voidustries/Voidustries.github.io&utm_campaign=badger)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d6398e04f79540db888a2503643a8773)](https://www.codacy.com/gh/Voidustries/Voidustries.github.io/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Voidustries/Voidustries.github.io&amp;utm_campaign=Badge_Grade)
 [![GitHub issues](https://img.shields.io/github/issues-raw/voidustries/Voidustries.github.io.svg?style=flat-square)](https://github.com/Voidustries/Voidustries.github.io/issues)
 [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/voidustries/Voidustries.github.io.svg?style=flat-square)](https://github.com/Voidustries/Voidustries.github.io/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/voidustries/Voidustries.github.io.svg?style=flat-square)](https://github.com/Voidustries/Voidustries.github.io/pulls)
