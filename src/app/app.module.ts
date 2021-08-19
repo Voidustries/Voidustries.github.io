@@ -22,6 +22,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [AppComponent, NavbarComponent, FooterComponent],
   imports: [
     BrowserModule,
@@ -34,9 +35,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatButtonModule,
     MatMenuModule,
     MatCommonModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}
