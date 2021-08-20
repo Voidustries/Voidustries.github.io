@@ -12,13 +12,13 @@ export class NavbarComponent {
 
   // "implements onInit" might be necessary
 
-  openProjects(): void {
+  public openProjects(): void {
     this.router.navigate(['projects']);
   }
-  openDevelopers(): void {
+  public openDevelopers(): void {
     this.router.navigate(['developers']);
   }
-  openHome(): void {
+  public openHome(): void {
     this.router.navigate(['/']);
   }
 
