@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,12 +6,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.sass'],
   templateUrl: './navbar.component.html',
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  // "implements onInit" might be necessary
 
   openProjects(): void {
     this.router.navigate(['projects']);
