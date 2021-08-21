@@ -26,7 +26,14 @@ import { DevelopersComponent } from './components/developers/developers.componen
 
 @NgModule({
   bootstrap: [AppComponent],
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, ProjectsComponent, DevelopersComponent],
+  declarations: [
+    AppComponent,
+    DevelopersComponent,
+    FooterComponent,
+    HomeComponent,
+    NavbarComponent,
+    ProjectsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
