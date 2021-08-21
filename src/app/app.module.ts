@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCommonModule } from '@angular/material/core';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 
 // Components
 import { FooterComponent } from './components/footer/footer.component';
@@ -46,6 +47,7 @@ import { DevelopersComponent } from './components/developers/developers.componen
     MatMenuModule,
     MatCommonModule,
     MatListModule,
+    MatCardModule,
   ],
   providers: [],
 })
