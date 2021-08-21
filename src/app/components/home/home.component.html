@@ -1,1 +1,65 @@
-<p>home works!</p>
+<div class="content">
+  <div>
+    <img
+      class="banner"
+      src="assets/images/Voidustries_Banner_V1.png"
+      alt="Voidustries Banner"
+    />
+  </div>
+  <div class="section">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Speeds up development</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Working with more people on one project gives different points of view
+          that you may not have thought of. If you want to make something
+          amazing, you have to get a lot of people involved. More people means
+          more commits, more bug fixes, and a faster push to releases, for
+          individual, non funded projects.
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Community</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Everyone that contributes to Voidustries has been reviewed and is
+          willing to help. We do not restrict content but we do make sure those
+          that wear our name will not tarnish the Voidustries name or personal
+          projects name. Everyone that wears our name is always ready to help
+          out when they can, and we try to keep trolls out as best we can.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="section">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Join Us</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          We are always looking for more people to interact with and join
+          Voidustries. We welcome all and invite all to come and help out where
+          ever they can.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div>
+    <div class="tech-header">
+      <h1>Some Technologies We Use</h1>
+    </div>
+      <div class="section">
+        <div
+          *ngFor="let slug of technologiesSlugs"
+          class="tech-icon"
+          style="mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/{{slug}}.svg)">
+        </div>
+      </div>
+  </div>
+</div>

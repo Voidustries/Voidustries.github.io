@@ -7,8 +7,18 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public technologiesSlugs = [
+    "angular",
+    "typescript",
+    "html5",
+    "sass",
+    "github",
+    "githubactions",
+  ]
+
   constructor() { }
 
   // "implements onInit" might be necessary
+  // TODO: Pull from GitHub API to display the top 6 Technologies used
 
 }
