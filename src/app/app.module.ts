@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Angular Material Imports
@@ -22,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { MiddleComponent } from './components/middle/middle.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     HomeComponent,
     NavbarComponent,
     ProjectsComponent,
+    MiddleComponent,
   ],
   imports: [
     BrowserModule,

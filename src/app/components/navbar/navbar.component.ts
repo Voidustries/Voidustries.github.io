@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -7,16 +8,29 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent {
+  private projectParams: Params = { page: 'projects' };
+  private homeParams: Params = { };
 
-  constructor(private router: Router) { }
+
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   // "implements onInit" might be necessary
-
+  
   public openProjects(): void {
-    this.router.navigate(['projects']);
+    this.router.navigate([],{
+      relativeTo: this.activatedRoute,
+      queryParams: this.projectParams,
+    });
   }
+  
   public openHome(): void {
-    this.router.navigate(['/']);
+    this.router.navigate([],{
+      relativeTo: this.activatedRoute,
+      queryParams: this.homeParams,
+    });
   }
 
 }
