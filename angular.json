@@ -26,7 +26,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
-            "assets": ["src/favicon.ico", "src/assets", "src/apple-touch-icon.png", "src/favicon-32x32.png", "src/favicon-16x16.png", "src/site.manifest", "src/android-chrome-192x192.png", "src/android-chrome-512x512.png", "src/README.md", "src/projects.html"],
+            "assets": ["src/favicon.ico", "src/assets", "src/apple-touch-icon.png", "src/favicon-32x32.png", "src/favicon-16x16.png", "src/site.manifest", "src/android-chrome-192x192.png", "src/android-chrome-512x512.png", "src/README.md", "src/projects"],
             "styles": ["src/custom-theme.scss", "src/styles.sass"],
             "scripts": []
           },
