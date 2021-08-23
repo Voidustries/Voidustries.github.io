@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
 
   constructor(private httpService: HttpService) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.repoSub = this.httpService
       .getProjects()
       .subscribe(async (repoList: Repositories<Repository>) => {
@@ -22,7 +22,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       });
   }
 
-  ngOnDestroy(): void {
+  public ngOnDestroy(): void {
     if (this.repoSub) {
       this.repoSub.unsubscribe();
     }

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Repositories, Repository } from '../models';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HttpService {
 
@@ -12,7 +12,7 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  getProjects(): Observable<Repositories<Repository>> {
+  public getProjects(): Observable<Repositories<Repository>> {
     return this.http.get<Repositories<Repository>>(this.void_projects_url);
   } 
 
