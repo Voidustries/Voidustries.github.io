@@ -1,0 +1,29 @@
+.content
+    padding: 0 calc( 100% / 12 ) 0 calc( 100% / 12 )
+
+.projects-container
+    display: flex
+    padding: 40px
+    justify-content: space-evenly
+    flex-flow: row wrap
+
+mat-card
+    min-width: 250px
+    max-width: 250px
+    display: flex
+    flex-direction: column
+    margin: 20px
+
+mat-card-content
+  flex-grow: 1
+  overflow: auto
+
+.github-button
+    background-color: #171515
+
+.github-button-icon
+    mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg)
+    height: 100%
+    width: 100%
+    background: #fff
+    transform: translateX(-5px) translateY(-1px)

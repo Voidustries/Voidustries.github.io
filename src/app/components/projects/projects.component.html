@@ -1,1 +1,24 @@
-<p>projects works!</p>
+<div class="content">
+  <div class="projects-container">
+    <mat-card class="project-card" *ngFor="let repo of repos" class="project">
+        <h1 class="project-title">{{ repo.name }}</h1>
+      <img
+        mat-card-image
+        class="project-logo"
+        src="{{ repo.logo_url }}"
+        alt="Logo"
+      />
+      <mat-card-content>
+        <p class="project-description">{{ repo.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a class="github-button"href="{{ repo.github_url }}" target="_blank" mat-raised-button>
+            <mat-icon>
+                <div class="github-button-icon"></div>
+            </mat-icon>
+            GitHub
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

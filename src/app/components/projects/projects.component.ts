@@ -1,14 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { Repositories, Repository } from 'src/app/models';
+import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-projects',
   styleUrls: ['./projects.component.sass'],
   templateUrl: './projects.component.html',
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit, OnDestroy {
+  public repos!: Array<Repository>;
+  private repoSub!: Subscription;
 
-  constructor() { }
+  constructor(private httpService: HttpService) {}
 
-  // "implements onInit" might be necessary
+  ngOnInit(): void {
+    this.repoSub = this.httpService
+      .getProjects()
+      .subscribe(async (repoList: Repositories<Repository>) => {
+        this.repos = repoList.res;
+      });
+  }
 
+  ngOnDestroy(): void {
+    if (this.repoSub) {
+      this.repoSub.unsubscribe();
+    }
+  }
 }
