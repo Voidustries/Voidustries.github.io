@@ -4,7 +4,6 @@
     <span class="spacer"></span>
     <div fxShow="true" fxHide.lt-md="true">
       <button mat-button (click)="openProjects()">Projects</button>
-      <button mat-button (click)="openDevelopers()">Developers</button>
       <a mat-button href="https://github.com/Voidustries" target="_blank">GitHub</a>
     </div>
     <button mat-button fxShow="true" fxHide.gt-sm [matMenuTriggerFor]="menu">
@@ -12,7 +11,6 @@
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click)="openProjects()">Projects</button>
-      <button mat-menu-item (click)="openDevelopers()">Developers</button>
       <a mat-menu-item href="https://github.com/Voidustries" target="_blank">GitHub</a>
     </mat-menu>
   </div>

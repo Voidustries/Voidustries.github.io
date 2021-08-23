@@ -15,9 +15,6 @@ export class NavbarComponent {
   public openProjects(): void {
     this.router.navigate(['projects']);
   }
-  public openDevelopers(): void {
-    this.router.navigate(['developers']);
-  }
   public openHome(): void {
     this.router.navigate(['/']);
   }

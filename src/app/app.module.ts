@@ -22,14 +22,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { DevelopersComponent } from './components/developers/developers.component';
 
 
 @NgModule({
   bootstrap: [AppComponent],
   declarations: [
     AppComponent,
-    DevelopersComponent,
     FooterComponent,
     HomeComponent,
     NavbarComponent,
