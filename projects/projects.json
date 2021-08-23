@@ -4,5 +4,11 @@
         "description": "Static webpage for Voidustries.",
         "github_url": "https://github.com/Voidustries/Voidustries.github.io",
         "logo_url": "https://github.com/Voidustries/Voidustries.github.io/raw/master/projects/logos/void_logo.png"
+    },
+    {
+        "name": "Poly (EOL)",
+        "description": "Web scraping program that allows automatic download of TV Shows from a tracked database.",
+        "github_url": "https://github.com/Voidustries/Poly-EOL",
+        "logo_url": "https://github.com/Voidustries/Voidustries.github.io/raw/master/projects/logos/poly_logo.png"
     }
 ]
