@@ -2,6 +2,7 @@
   "name": "voidustries",
   "version": "0.0.0",
   "scripts": {
+    "build:ci": "ng build --prod --sourceMap=false --base-href www.voidustries.ca",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
