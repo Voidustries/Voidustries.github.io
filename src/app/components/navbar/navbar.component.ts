@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -14,23 +13,22 @@ export class NavbarComponent {
 
   constructor(
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) { }
 
   // "implements onInit" might be necessary
   
   public openProjects(): void {
     this.router.navigate([],{
-      relativeTo: this.activatedRoute,
       queryParams: this.projectParams,
+      relativeTo: this.activatedRoute,
     });
   }
   
   public openHome(): void {
     this.router.navigate([],{
-      relativeTo: this.activatedRoute,
       queryParams: this.homeParams,
+      relativeTo: this.activatedRoute,
     });
   }
-
 }

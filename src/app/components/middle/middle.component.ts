@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -7,15 +7,15 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./middle.component.sass'],
   templateUrl: './middle.component.html',
 })
-export class MiddleComponent implements OnInit {
+export class MiddleComponent implements OnInit, OnDestroy {
   public projects!: boolean;
   private routeSub!: Subscription;
 
   constructor(
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ){ }
   
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.routeSub = this.activatedRoute.queryParams.subscribe((params: Params) => {
       console.log(params)
       if (params['page'] == "projects") {
@@ -26,7 +26,7 @@ export class MiddleComponent implements OnInit {
     });
   }
 
-  ngOnDestroy(): void {
+  public ngOnDestroy(): void {
     if (this.routeSub) {
       this.routeSub.unsubscribe();
     }
