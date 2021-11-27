@@ -1,0 +1,81 @@
+<div class="content">
+  <div class="challenge-container">
+
+    <!-- Challenge One -->
+    <mat-card class="challenge-card">
+      <mat-card-title-group>
+        <mat-card-title>Login</mat-card-title>
+        <mat-card-subtitle>Challenge 1</mat-card-subtitle>
+        <mat-icon><span class="material-icons"> done </span></mat-icon>
+      </mat-card-title-group>
+    </mat-card>
+
+    <!-- Challenge Two -->
+    <mat-card class="challenge-card">
+      <mat-card-title-group>
+        <mat-card-title>Initialization</mat-card-title>
+        <mat-card-subtitle>Challenge 2</mat-card-subtitle>
+        <mat-icon><span class="material-icons"><p>
+          {{ challengeStatus.challengeTwo.completed ? "done" : "close" }}
+        </p></span></mat-icon>
+      </mat-card-title-group>
+      <mat-card-actions>
+        <button mat-button [disabled]="!challengeStatus.challengeOne.completed" (click)="openChallengeTwo()">Open</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Challenge Three -->
+    <mat-card class="challenge-card">
+      <mat-card-title-group>
+        <mat-card-title>Ingress</mat-card-title>
+        <mat-card-subtitle>Challenge 3</mat-card-subtitle>
+        <mat-icon><span class="material-icons"><p>
+          {{ challengeStatus.challengeThree.completed ? "done" : "close" }}
+        </p></span></mat-icon>
+      </mat-card-title-group>
+      <mat-card-actions>
+        <button mat-button [disabled]="!challengeStatus.challengeTwo.completed" (click)="openChallengeThree()">Open</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Challenge Four -->
+    <mat-card class="challenge-card">
+      <mat-card-title-group>
+        <mat-card-title>Pivot</mat-card-title>
+        <mat-card-subtitle>Challenge 4</mat-card-subtitle>
+        <mat-icon><span class="material-icons"><p>
+          {{ challengeStatus.challengeFour.completed ? "done" : "close" }}
+        </p></span></mat-icon>
+      </mat-card-title-group>
+      <mat-card-actions>
+        <button mat-button [disabled]="!challengeStatus.challengeThree.completed" (click)="openChallengeFour()">Open</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Challenge Five -->
+    <mat-card class="challenge-card">
+      <mat-card-title-group>
+        <mat-card-title>Through the Hole</mat-card-title>
+        <mat-card-subtitle>Challenge 5</mat-card-subtitle>
+        <mat-icon><span class="material-icons"><p>
+          {{ challengeStatus.challengeFive.completed ? "done" : "close" }}
+        </p></span></mat-icon>
+      </mat-card-title-group>
+      <mat-card-actions>
+        <button mat-button [disabled]="!challengeStatus.challengeFour.completed" (click)="openChallengeFive()">Open</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Challenge Six -->
+    <mat-card class="challenge-card">
+      <mat-card-title-group>
+        <mat-card-title>1dI0T</mat-card-title>
+        <mat-card-subtitle>Challenge 6</mat-card-subtitle>
+        <mat-icon><span class="material-icons"><p>close</p></span></mat-icon>
+      </mat-card-title-group>
+      <mat-card-actions>
+        <button mat-button [disabled]="!challengeStatus.challengeFive.completed" (click)="openChallengeSix()">Open</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

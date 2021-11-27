@@ -16,6 +16,11 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCommonModule } from '@angular/material/core';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
+import { MatInputModule } from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 // Components
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,6 +28,22 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MiddleComponent } from './components/middle/middle.component';
+import { LoginComponent } from './components/login/login.component';
+
+// First-party
+import { FormsModule } from '@angular/forms';
+
+// Thrid-party
+import { CookieService } from 'ngx-cookie-service';
+
+// Challenges
+import { ChallengeComponent } from './components/challenge/challenge.component';
+import { ChallengeTwoComponent } from './components/challenge/challenges/challenge-two/challenge-two.component';
+import { ChallengeThreeComponent } from './components/challenge/challenges/challenge-three/challenge-three.component';
+import { ChallengeFourComponent } from './components/challenge/challenges/challenge-four/challenge-four.component';
+import { ChallengeFiveComponent } from './components/challenge/challenges/challenge-five/challenge-five.component';
+import { ChallengeSixComponent } from './components/challenge/challenges/challenge-six/challenge-six.component';
+
 
 
 @NgModule({
@@ -34,21 +55,37 @@ import { MiddleComponent } from './components/middle/middle.component';
     NavbarComponent,
     ProjectsComponent,
     MiddleComponent,
+    LoginComponent,
+    ChallengeComponent,
+    ChallengeTwoComponent,
+    ChallengeThreeComponent,
+    ChallengeFourComponent,
+    ChallengeFiveComponent,
+    ChallengeSixComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
+    FlexLayoutModule,
     MatIconModule,
     MatToolbarModule,
-    FlexLayoutModule,
     MatButtonModule,
     MatMenuModule,
     MatCommonModule,
     MatListModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSnackBarModule,
+    MatIconModule,
+    MatDialogModule,
+    MatDatepickerModule,
   ],
-  providers: [],
+  providers: [
+    CookieService
+  ],
 })
 export class AppModule {}

@@ -1,0 +1,27 @@
+<h1 mat-dialog-title>Pivot</h1>
+
+<p>
+    The target device is on a network designed just for IoT (Internet of Things) devices. <br>
+    These devices are inherently insecure and cannot be trusted so they are put on a separate <br>
+    and isolated network from all other devices.
+</p>
+<p>
+    The target device is the ShelfLED controller however there is no direct access it the <br>
+    device for the above reason. Find your current IP, scan the network for another host that <br>
+    might have some connection to the target. Use the command `ssh red@host_ip` to connect to the host.
+</p>
+<p>
+    Once connected we need the flag. Generally environment variables are a good place to store <br>
+    secrets that you do not want in code.
+</p>
+
+<mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Flag</mat-label>
+        <input matInput placeholder="flag" [(ngModel)]="flagInput" />
+        <mat-hint align="end">echo a environment variable FLAG?</mat-hint>
+      </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="submit()">Submit</button>
+</mat-dialog-actions>
