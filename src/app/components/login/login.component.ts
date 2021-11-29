@@ -13,8 +13,8 @@ export interface User {
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',
   styleUrls: ['./login.component.sass'],
+  templateUrl: './login.component.html',
 })
 export class LoginComponent implements OnInit{
   public usernameField!: string;
@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit{
     private activatedRoute: ActivatedRoute,
     ) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     const info: SignInInfo = JSON.parse(this.cookieService.get('signInInfo'));
     if (info.loggedIn && new Date(info.expires) > new Date()) {
       this.navigateToChallenge();
@@ -45,26 +45,26 @@ export class LoginComponent implements OnInit{
     }
   }
 
-  navigateToChallenge() {
+  private navigateToChallenge(): void {
     this.router.navigate([], {
       queryParams: this.challengeParams,
       relativeTo:this.activatedRoute,
     })
   }
 
-  sendSnack(message: string) {
+  private sendSnack(message: string): void {
     this._snackBar.open(message, undefined, { duration: 5000 });
   }
 
-  unameHint() {
+  public unameHint(): void {
     alert("This is a number that really gets watched,\nso we can always know if the system got botched.\n\nWe use it to aid in our short term survival,\nas we wait for it's much anticipated arrival.");
   }
 
-  passHint() {
+  public passHint(): void {
     alert("This bit of text is hidden in plain sight,\nBut something is wrong and you can't see it right.\n\nThis text is not like the rest all crisp and opaque,\nBut you could try to highlight it to catch a little break.");
   }
 
-  login() {
+  public login(): void {
     if (this.usernameField === this.user.username && new shajs.sha256().update(this.user.salt + '-' + this.passwordField).digest('hex') === this.user.hashPassword) {
       const payload: SignInInfo = {
         loggedIn: true,

@@ -12,43 +12,42 @@ import { ChallengeTwoComponent } from './challenges/challenge-two/challenge-two.
 
 @Component({
   selector: 'app-challenge',
-  templateUrl: './challenge.component.html',
   styleUrls: ['./challenge.component.sass'],
+  templateUrl: './challenge.component.html',
 })
 export class ChallengeComponent implements OnInit {
   public challengeStatus: ChallengeStatusInterface = {
     challengeOne: {
+      completed: true,
       login: 'placeholder',
       password: '2f1d88a0-37a5-4385-bf0e-40c58daf296a',
-      completed: true,
-    },
-    challengeTwo: {
-      date: '',
-      completed: false,
     },
     challengeThree: {
-      flag: '',
       completed: false,
+      flag: '',
+    },
+    challengeTwo: {
+      completed: false,
+      date: '',
     },
     challengeFour: {
-      flag: '',
       completed: false,
+      flag: '',
     },
     challengeFive: {
-      flag: '',
       completed: false,
-    }
+      flag: '',
+    },
   };
 
   constructor(
-    private _snackBar: MatSnackBar,
     private cookieService: CookieService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    public dialog: MatDialog
+    public dialog: MatDialog,
   ) {}
 
-  ngOnInit() {
+  public ngOnInit(): void {
 
     try {
       const info: SignInInfo = JSON.parse(this.cookieService.get('signInInfo'));
@@ -69,11 +68,11 @@ export class ChallengeComponent implements OnInit {
     }
   }
 
-  updateCookie() {
+  private updateCookie(): void {
     this.cookieService.set('challengeStatus', JSON.stringify(this.challengeStatus));
   }
 
-  openChallengeTwo() {
+  public openChallengeTwo(): void {
     const ref = this.dialog.open(ChallengeTwoComponent, { data: this.challengeStatus.challengeTwo});
 
     ref.afterClosed().subscribe((_) => {
@@ -81,7 +80,7 @@ export class ChallengeComponent implements OnInit {
     });
   }
 
-  openChallengeThree() {
+  public openChallengeThree(): void {
     const ref = this.dialog.open(ChallengeThreeComponent, { data: this.challengeStatus.challengeThree});
 
     ref.afterClosed().subscribe((_) => {
@@ -89,7 +88,7 @@ export class ChallengeComponent implements OnInit {
     });
   }
 
-  openChallengeFour() {
+  public openChallengeFour(): void {
     const ref = this.dialog.open(ChallengeFourComponent, { data: this.challengeStatus.challengeFour});
 
     ref.afterClosed().subscribe((_) => {
@@ -97,7 +96,7 @@ export class ChallengeComponent implements OnInit {
     });
   }
 
-  openChallengeFive() {
+  public openChallengeFive(): void {
     const ref = this.dialog.open(ChallengeFiveComponent, { data: this.challengeStatus.challengeFive});
 
     ref.afterClosed().subscribe((_) => {
@@ -105,7 +104,7 @@ export class ChallengeComponent implements OnInit {
     });
   }
 
-  openChallengeSix() {
+  public openChallengeSix(): void {
     this.dialog.open(ChallengeSixComponent);
   }
 }

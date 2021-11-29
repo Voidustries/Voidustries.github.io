@@ -3,24 +3,24 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-challenge-five',
+  styleUrls: ['./challenge-five.component.sass'],
   templateUrl: './challenge-five.component.html',
-  styleUrls: ['./challenge-five.component.sass']
 })
 export class ChallengeFiveComponent implements OnInit {
 
   public flagInput!: string;
-  private flag: string = "f3714726-0f6a-4c1d-abff-a95d672f27db"
+  private flag = "f3714726-0f6a-4c1d-abff-a95d672f27db"
 
   constructor(
     public ref: MatDialogRef<ChallengeFiveComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
   ) { }
 
-  ngOnInit() {
+  public ngOnInit(): void {
     this.flagInput = this.data.flag;
   }
 
-  submit() {
+  public submit(): void {
     if (this.flagInput == this.flag) {
       this.data.completed = true;
       this.data.flag = this.flag;

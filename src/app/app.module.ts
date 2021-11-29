@@ -85,7 +85,7 @@ import { ChallengeSixComponent } from './components/challenge/challenges/challen
     MatDatepickerModule,
   ],
   providers: [
-    CookieService
+    CookieService,
   ],
 })
 export class AppModule {}
