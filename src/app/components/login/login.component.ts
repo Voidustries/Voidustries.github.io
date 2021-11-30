@@ -66,8 +66,8 @@ export class LoginComponent implements OnInit {
         .digest('hex') === this.user.hashPassword
     ) {
       const payload: SignInInfo = {
-        loggedIn: true,
         expires: new Date(new Date().getTime() + 60 * 60 * 24 * 1000),
+        loggedIn: true,
       };
       const cookie = JSON.stringify(payload);
       this.cookieService.set('signInInfo', cookie);
