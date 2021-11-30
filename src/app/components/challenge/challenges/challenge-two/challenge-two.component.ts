@@ -16,11 +16,11 @@ export class ChallengeTwoComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any,
   ) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.dateInput = this.data.date;
   }
 
-  submit(): void {
+  public submit(): void {
     if (this.dateInput == this.date) {
       this.data.completed = true;
       this.data.date = this.date;

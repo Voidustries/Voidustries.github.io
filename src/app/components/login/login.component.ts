@@ -16,25 +16,26 @@ export interface User {
   styleUrls: ['./login.component.sass'],
   templateUrl: './login.component.html',
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
   public usernameField!: string;
   public passwordField!: string;
-  public hidePasswordField: boolean = true;
+  public hidePasswordField = true;
 
-  private challengeParams: Params = { page: 'da88ee3dd8a1'};
+  private challengeParams: Params = { page: 'da88ee3dd8a1' };
 
   private user: User = {
-    username: '775307033826',
-    hashPassword: 'dcd97882e46dae0d210eb77be7f6492ec65d22066e23752feb106dfe5b249191',
+    hashPassword:
+      'dcd97882e46dae0d210eb77be7f6492ec65d22066e23752feb106dfe5b249191',
     salt: '3de2292e-3109-4df9-ba6c-0b3fba887dbd',
+    username: '775307033826',
   };
 
   constructor(
     private _snackBar: MatSnackBar,
     private cookieService: CookieService,
     private router: Router,
-    private activatedRoute: ActivatedRoute,
-    ) {}
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   public ngOnInit(): void {
     const info: SignInInfo = JSON.parse(this.cookieService.get('signInInfo'));
@@ -45,31 +46,29 @@ export class LoginComponent implements OnInit{
     }
   }
 
-  private navigateToChallenge(): void {
-    this.router.navigate([], {
-      queryParams: this.challengeParams,
-      relativeTo:this.activatedRoute,
-    })
-  }
-
-  private sendSnack(message: string): void {
-    this._snackBar.open(message, undefined, { duration: 5000 });
-  }
-
   public unameHint(): void {
-    alert("This is a number that really gets watched,\nso we can always know if the system got botched.\n\nWe use it to aid in our short term survival,\nas we wait for it's much anticipated arrival.");
+    alert(
+      "This is a number that really gets watched,\nso we can always know if the system got botched.\n\nWe use it to aid in our short term survival,\nas we wait for it's much anticipated arrival."
+    );
   }
 
   public passHint(): void {
-    alert("This bit of text is hidden in plain sight,\nBut something is wrong and you can't see it right.\n\nThis text is not like the rest all crisp and opaque,\nBut you could try to highlight it to catch a little break.");
+    alert(
+      "This bit of text is hidden in plain sight,\nBut something is wrong and you can't see it right.\n\nThis text is not like the rest all crisp and opaque,\nBut you could try to highlight it to catch a little break."
+    );
   }
 
   public login(): void {
-    if (this.usernameField === this.user.username && new shajs.sha256().update(this.user.salt + '-' + this.passwordField).digest('hex') === this.user.hashPassword) {
+    if (
+      this.usernameField === this.user.username &&
+      new shajs.sha256()
+        .update(this.user.salt + '-' + this.passwordField)
+        .digest('hex') === this.user.hashPassword
+    ) {
       const payload: SignInInfo = {
         loggedIn: true,
-        expires: new Date(new Date().getTime() + 60*60*24*1000)
-      }
+        expires: new Date(new Date().getTime() + 60 * 60 * 24 * 1000),
+      };
       const cookie = JSON.stringify(payload);
       this.cookieService.set('signInInfo', cookie);
       console.log(this.cookieService.get('signInInfo'));
@@ -77,11 +76,20 @@ export class LoginComponent implements OnInit{
       return;
     }
 
-    this.sendSnack('Login Error: Incorrect Username or Password')
+    this.sendSnack('Login Error: Incorrect Username or Password');
   }
 
-}
+  private navigateToChallenge(): void {
+    this.router.navigate([], {
+      queryParams: this.challengeParams,
+      relativeTo: this.activatedRoute,
+    });
+  }
 
+  private sendSnack(message: string): void {
+    this._snackBar.open(message, undefined, { duration: 5000 });
+  }
+}
 
 // Hashing test code
 // const exibit: string = new shajs.sha256().update('testplaceholder').digest('hex');

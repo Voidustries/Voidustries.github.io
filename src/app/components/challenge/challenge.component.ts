@@ -17,6 +17,14 @@ import { ChallengeTwoComponent } from './challenges/challenge-two/challenge-two.
 })
 export class ChallengeComponent implements OnInit {
   public challengeStatus: ChallengeStatusInterface = {
+    challengeFive: {
+      completed: false,
+      flag: '',
+    },
+    challengeFour: {
+      completed: false,
+      flag: '',
+    },
     challengeOne: {
       completed: true,
       login: 'placeholder',
@@ -29,14 +37,6 @@ export class ChallengeComponent implements OnInit {
     challengeTwo: {
       completed: false,
       date: '',
-    },
-    challengeFour: {
-      completed: false,
-      flag: '',
-    },
-    challengeFive: {
-      completed: false,
-      flag: '',
     },
   };
 
@@ -66,10 +66,6 @@ export class ChallengeComponent implements OnInit {
     } catch (error) {
       this.cookieService.set('challengeStatus', JSON.stringify(this.challengeStatus));
     }
-  }
-
-  private updateCookie(): void {
-    this.cookieService.set('challengeStatus', JSON.stringify(this.challengeStatus));
   }
 
   public openChallengeTwo(): void {
@@ -106,5 +102,9 @@ export class ChallengeComponent implements OnInit {
 
   public openChallengeSix(): void {
     this.dialog.open(ChallengeSixComponent);
+  }
+
+  private updateCookie(): void {
+    this.cookieService.set('challengeStatus', JSON.stringify(this.challengeStatus));
   }
 }
