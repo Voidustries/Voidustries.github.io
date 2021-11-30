@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     private _snackBar: MatSnackBar,
     private cookieService: CookieService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
   ) {}
 
   public ngOnInit(): void {
@@ -48,13 +48,13 @@ export class LoginComponent implements OnInit {
 
   public unameHint(): void {
     alert(
-      "This is a number that really gets watched,\nso we can always know if the system got botched.\n\nWe use it to aid in our short term survival,\nas we wait for it's much anticipated arrival."
+      "This is a number that really gets watched,\nso we can always know if the system got botched.\n\nWe use it to aid in our short term survival,\nas we wait for it's much anticipated arrival.",
     );
   }
 
   public passHint(): void {
     alert(
-      "This bit of text is hidden in plain sight,\nBut something is wrong and you can't see it right.\n\nThis text is not like the rest all crisp and opaque,\nBut you could try to highlight it to catch a little break."
+      "This bit of text is hidden in plain sight,\nBut something is wrong and you can't see it right.\n\nThis text is not like the rest all crisp and opaque,\nBut you could try to highlight it to catch a little break.",
     );
   }
 
