@@ -28,21 +28,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MiddleComponent } from './components/middle/middle.component';
-import { LoginComponent } from './components/login/login.component';
 
 // First-party
 import { FormsModule } from '@angular/forms';
 
 // Thrid-party
 import { CookieService } from 'ngx-cookie-service';
-
-// Challenges
-import { ChallengeComponent } from './components/challenge/challenge.component';
-import { ChallengeTwoComponent } from './components/challenge/challenges/challenge-two/challenge-two.component';
-import { ChallengeThreeComponent } from './components/challenge/challenges/challenge-three/challenge-three.component';
-import { ChallengeFourComponent } from './components/challenge/challenges/challenge-four/challenge-four.component';
-import { ChallengeFiveComponent } from './components/challenge/challenges/challenge-five/challenge-five.component';
-import { ChallengeSixComponent } from './components/challenge/challenges/challenge-six/challenge-six.component';
 
 
 
@@ -55,13 +46,6 @@ import { ChallengeSixComponent } from './components/challenge/challenges/challen
     NavbarComponent,
     ProjectsComponent,
     MiddleComponent,
-    LoginComponent,
-    ChallengeComponent,
-    ChallengeTwoComponent,
-    ChallengeThreeComponent,
-    ChallengeFourComponent,
-    ChallengeFiveComponent,
-    ChallengeSixComponent,
   ],
   imports: [
     BrowserModule,
