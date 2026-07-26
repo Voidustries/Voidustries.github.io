@@ -167,7 +167,7 @@
 				<span>who keep building things</span>
 				<span>instead of sleeping</span>
 			</h1>
-			<p>Voidustries is where those things live. Nothing is for sale.</p>
+			<p>Voidustries is where those things live. Nothing is done.</p>
 			<div class="cta">
 				<a class="button" href={GITHUB_URL} target="_blank" rel="noopener noreferrer">GitHub</a>
 			</div>
