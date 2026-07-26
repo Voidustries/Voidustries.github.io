@@ -1,0 +1,1 @@
+import{k as o,f as t,u as c}from"./BemmBTOq.js";function f(e){throw new Error("https://svelte.dev/e/lifecycle_outside_component")}function r(e){t===null&&f(),o(()=>{const n=c(e);if(typeof n=="function")return n})}export{r as o};
