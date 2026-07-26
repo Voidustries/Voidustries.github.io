@@ -1,17 +1,20 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# compiled output
-/dist
-/tmp
-/out-tsc
-# Only exists if Bazel was run
-/bazel-out
-
 # dependencies
 /node_modules
 
-# profiling files
-chrome-profiler-events*.json
+# build output
+/build
+/.svelte-kit
+/package
+
+# env
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # IDEs and editors
 /.idea
@@ -30,20 +33,6 @@ chrome-profiler-events*.json
 !.vscode/extensions.json
 .history/*
 
-# misc
-/.angular/cache
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
 # System Files
 .DS_Store
 Thumbs.db
-
-# Old stuff
-/oldsite

@@ -11,12 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20'
+          cache: pnpm
       - name: Install deps.
-        run: npm ci
+        run: pnpm install --frozen-lockfile
       - name: Build website
-        run: npm run build:ci
+        run: pnpm build

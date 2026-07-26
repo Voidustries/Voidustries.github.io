@@ -12,4 +12,20 @@
 [![license](https://img.shields.io/github/license/voidustries/Voidustries.github.io.svg)](https://github.com/Voidustries/Voidustries.github.io/blob/master/LICENSE)
 ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/voidustries/Voidustries.github.io.svg)
 
-Static website for Voidustries. Built using Angular.
+Static website for Voidustries. Built with [SvelteKit](https://svelte.dev/docs/kit), TypeScript, and pnpm.
+
+## Development
+
+```sh
+pnpm install
+pnpm dev
+```
+
+## Building
+
+```sh
+pnpm build
+pnpm preview
+```
+
+The site is statically prerendered via `@sveltejs/adapter-static` and deployed to the `gh-pages` branch on tagged releases (see `.github/workflows/build-deploy.yml`).
